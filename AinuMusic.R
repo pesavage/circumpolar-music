@@ -132,7 +132,8 @@ library(ade4)
 japan.euc.dist<-lingoes(japan.dist)
 japan.sq.euc.dist<-(japan.euc.dist)^2
 japan.sq.euc.frame<-as.data.frame(as.matrix(japan.sq.euc.dist))
-japan.sq.euc.frame[upper.tri(japan.sq.euc.frame)] <- NA  write.table(japan.sq.euc.frame,"JapanCCCMEucDist.txt",na="", row.names=FALSE)
+japan.sq.euc.frame[upper.tri(japan.sq.euc.frame)] <- NA 
+write.table(japan.sq.euc.frame,"JapanCCCMEucDist.txt",na="", row.names=FALSE)
 
 #Open the .txt file, remove “” marks using find/replace, then copy this distance matrix into the .arp file, and modify the samples lists to make it consistent.
 
